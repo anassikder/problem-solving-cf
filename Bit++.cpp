@@ -1,19 +1,21 @@
-
 #include <bits/stdc++.h>
 using namespace std;
 
-void solution()
+int solution()
 {
-    int x;
-    cin >> x;
-    if (x%2==0 && x>2)
+    string s;
+    cin>>s;
+    int x=0;
+    if (s == "++X" || s == "X++")
     {
-        cout<<"YES"<<endl;
+        x+=1;
     }
     else
     {
-        cout<<"NO"<<endl;
+        x-=1;
     }
+    return x;
+
 }
 
 int main()
@@ -22,12 +24,15 @@ int main()
     cin.tie(NULL);
     cout << fixed << setprecision(2);
 
-    int test_cases;
+    int test_cases,res=0;
     cin >> test_cases;
     while(test_cases--)
     {
-        solution();
+        int x = solution();
+        res+=x;
+
     }
+    cout<<res;
 
     return 0;
 }

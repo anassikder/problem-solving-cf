@@ -1,18 +1,17 @@
-
 #include <bits/stdc++.h>
 using namespace std;
 
-void solution()
-{
-    int x;
-    cin >> x;
-    if (x%2==0 && x>2)
+int solution(){
+    int x , y ,z;
+    cin>>x>>y>>z;
+    if (x+y+z>=2)
     {
-        cout<<"YES"<<endl;
+
+        return 1;
     }
     else
     {
-        cout<<"NO"<<endl;
+        return 0;
     }
 }
 
@@ -23,12 +22,13 @@ int main()
     cout << fixed << setprecision(2);
 
     int test_cases;
+    int solve = 0;
     cin >> test_cases;
-    while(test_cases--)
-    {
-        solution();
+    while(test_cases--){
+        int ret = solution();
+        solve+=ret;
     }
+    cout<<solve<<endl;
 
     return 0;
 }
-

@@ -1,19 +1,8 @@
-
 #include <bits/stdc++.h>
 using namespace std;
 
-void solution()
-{
-    int x;
-    cin >> x;
-    if (x%2==0 && x>2)
-    {
-        cout<<"YES"<<endl;
-    }
-    else
-    {
-        cout<<"NO"<<endl;
-    }
+void solution(){
+
 }
 
 int main()
@@ -24,11 +13,9 @@ int main()
 
     int test_cases;
     cin >> test_cases;
-    while(test_cases--)
-    {
+    while(test_cases--){
         solution();
     }
 
     return 0;
 }
-
